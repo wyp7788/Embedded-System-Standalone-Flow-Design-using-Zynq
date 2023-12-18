@@ -18,8 +18,9 @@ After completing this lab, you will be able to:
 1.  Select **File > Project > Save As …** to open the Save Project As dialog box. Enter **lab6** as the project name.  Make sure that the **Create Project Subdirectory** option is checked, the project directory path is **{labs}** and click **OK.**
 1. Click **Settings** in the _Flow Navigator_ pane.
 1. Expand **IP** in the left pane of the _Project Settings_ form and select **Repository.**
-1. Click on the _plus_ button of the IP Repositories panel, browse to **{sources}\lab2\math_ip** and click **Select.**
+1. Click on the _plus_ button of the IP Repositories panel, browse to **{sources}\lab6\math_ip** and click **Select.**
     The directory will be scanned and one IP will be detected and reported.   
+    
     <p align="center">
     <img src ="./pics/lab6/1_IPRepo.png" width="60%" height="80%"/>
     </p>
@@ -63,6 +64,7 @@ After completing this lab, you will be able to:
 We want to connect the ILA core to the LED interface. Vivado prohibits connecting ILA cores to interfaces.  In order to monitor the LED output signals, we need to convert the LED interface to simple output port.
 
 ### Disable LEDs interface.
+
 1. Double-click the _leds_ instance to open its configuration form.
 1. Click **Clear Board Parameters** and click **OK** to close the configuration form.
 1. Select _leds_ port and delete it.

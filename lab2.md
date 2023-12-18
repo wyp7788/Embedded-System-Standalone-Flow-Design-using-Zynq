@@ -7,6 +7,16 @@ After completing this lab, you will be able to:
 *	Add additional IP to a hardware design
 *	Setup some of the compiler settings
 
+
+
+![image-20231217145555132](D:\Md_Img\image-20231217145555132.png)
+
+**bug修复：** 创建外部端口时候选择 **creat interface port**
+
+
+
+
+
 ## Steps
 
 ### Open the Project
@@ -210,3 +220,8 @@ The width of the interface will be automatically determined by the upstream bloc
 ## Conclusion
 
 GPIO peripherals were added from the IP catalog and connected to the Processing System through the 32b Master GP0 interface. The peripherals were configured and external FPGA connections were established. A TestApp application project was created and the functionality was verified after downloading the bitstream and executing the program.
+
+
+
+
+

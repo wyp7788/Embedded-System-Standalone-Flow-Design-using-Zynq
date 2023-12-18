@@ -147,7 +147,9 @@ After completing this lab, you will be able to:
 1. Build the project.
 
 ## Create the SD Card Image and Test
+
 ### Create the bin files from lab1 and lab2.
+
 1. Using the System Explorer, create directory called **SD\_image** under the **{labs}\lab8** directory.
 1. In System Explorer, copy the **system\_wrapper.bit** of the lab1 project into the **SD\_image** directory and rename it **lab1.bit**, and do similar for lab2
 
@@ -240,7 +242,7 @@ After completing this lab, you will be able to:
 1. Select **Xilinx > Program Flash**.
 1. Click the **Browse** button of the _Image File_ field, and browse to the **{labs}\lab8\QSPI_image** directory, select **lab8.mcs** file, and click **Open**.
     >A solution mcs file is provided in the **{sources}\lab8\QSPI_image** directory, use it if you have skipped the previous step of generate QSPI image.
- 
+
 1. In the _Offset_ field enter **0** as the offset and click the **Program** button. The QSPI flash will be programmed. It may take up to 4 minutes.
 
 ### Test the QSPI Multi-Applications

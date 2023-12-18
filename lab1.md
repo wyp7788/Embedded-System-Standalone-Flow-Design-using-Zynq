@@ -83,28 +83,30 @@ After completing this lab, you will be able to:
 
 1.	Expand **Peripheral I/O Pins** if necessary, and ensure all the following I/O peripherals are deselected except UART 1.
 
-    >**Note :** Select UART 0 for PYNQ-Z2 instead of UART 1
+    >**Note :** **Select UART 0 for PYNQ-Z2 instead of UART 1**
 
 
-    i.e. Remove: &nbsp; <i>ENET
+```html
+i.e. Remove: &nbsp; <i>ENET
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; USB 0
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; USB 0
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SD 0
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SD 0
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expand **GPIO** to deselect GPIO MIO
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expand **GPIO** to deselect GPIO MIO
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expand **Memory Interfaces** to deselect Quad SPI Flash
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expand **Memory Interfaces** to deselect Quad SPI Flash
 
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expand **Application Processor Unit** to disable Timer 0.
-    </i>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Expand **Application Processor Unit** to disable Timer 0.
+</i>
 
-    <p align="center">
-    <img src ="pics/lab1/6_UART.jpg" width="90%" height="80%"/>
-    </p>
-    <p align = "center">
-    <i> Selecting only UART 1</i>
-    </p>  
+<p align="center">
+<img src ="pics/lab1/6_UART.jpg" width="90%" height="80%"/>
+</p>
+<p align = "center">
+<i> Selecting only UART 1</i>
+</p>  
+```
 
 
 1.	Select the **PS-PL Configuration** tab on the left.
@@ -150,7 +152,7 @@ After completing this lab, you will be able to:
 Note:  Since we do not have any hardware in Programmable Logic (PL) there is no bitstream to generate, hence the Include bitstream option is not necessary at this time.
 
 1. Basic information about the hardware configuration of the project can be found in the Xilinx Support Archive (XSA) file, along with the Address maps for the PS systems, and driver information. The .xsa file is used in the software environment to determine the peripherals available in the system, and their location in the address map.
- 
+
 ### Generate Memory Test Application in Vitis IDE
 
 1. Select **Tools > Launch Vitis IDE**, and Select the workspace location with any given location path. Click Launch. The Vitis IDE opens.
@@ -205,7 +207,7 @@ Note:  Since we do not have any hardware in Programmable Logic (PL) there is no 
     <p align = "center">
     <i> Open the Vitis Serial Terminal </i>
     </p>
- 
+
 1. Click the Add button in the Vitis Serial Terminal to connect to a serial terminal. Select the port from the dropdown menu. Keep the Advanced Settings as-is. Click OK.
    <p align="center">
     <img src ="pics/lab1/16_ConnectSerial.jpg" width="35%" height="80%"/>

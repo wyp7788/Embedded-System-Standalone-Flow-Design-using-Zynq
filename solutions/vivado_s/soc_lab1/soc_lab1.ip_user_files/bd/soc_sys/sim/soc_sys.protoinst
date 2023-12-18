@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"soc_sys": {
+			"proto_instances": {
+			}
+		}
+	}
+}

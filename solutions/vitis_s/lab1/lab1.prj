@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab1" location="D:/X_Project/V_Workspace/lab1" platform="D:/X_Project/V_Workspace/lab1_playform/export/lab1_playform/lab1_playform.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="lab1_system" sysConfig="lab1_playform" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="a8870d31d25aaa23e3db2d14b04943b9">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1371513820">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1881421028" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="memory_tests"/>
+</sdkproject:SdkProject>

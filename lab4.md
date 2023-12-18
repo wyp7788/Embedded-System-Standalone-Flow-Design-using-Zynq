@@ -55,26 +55,26 @@ After completing this lab, you will be able to:
 
 
     The following steps must be performed in your software application to enable reading from the GPIO: 1) Initialize the GPIO, 2) Set data direction, and 3) Read the data
-
+    
     Find the descriptions for the following functions:
-
+    
     **XGpio_Initialize(XGpio \*InstancePtr, u16 DeviceId)**
     _InstancePtr_ is a pointer to an XGpio instance.  The memory the pointer references must be pre-allocated by the caller.  Further calls to manipulate the component through the XGpio API must be made with this pointer.
-
+    
     _DeviceId_ is the unique id of the device controlled by this XGpio component.  Passing in a device id associates the generic XGpio instance to a specific device, as chosen by the caller or application developer.
-
+    
     **XGpio_SetDataDirection(XGpio \*InstancePtr, unsigned Channel, u32 DirectionMask)**
-
+    
     _InstancePtr_ is a pointer to the XGpio instance to be worked on.
-
+    
     _Channel_ contains the channel of the GPIO (1 or 2) to operate on.
-
+    
     _DirectionMask_ is a bitmask specifying which bits are inputs and which are outputs.  Bits set to 0 are output and bits set to 1 are input.  
-
+    
     **XGpio_DiscreteRead(XGpio \*InstancePtr, unsigned channel)**
-
+    
     _InstancePtr_ is a pointer to the XGpio instance to be worked on.
-
+    
     _Channel_ contains the channel of the GPIO (1 or 2) to operate on
 1.	Open the header file **xparameters.h** by double-clicking on **xparameters.h** in the Outline tab
 
@@ -95,7 +95,7 @@ After completing this lab, you will be able to:
     16
     17   XGpio_Initialize(&push, XPAR_BUTTONS_DEVICE_ID); // Modify this
     18   XGpio_SetDataDirection(&push, 1, 0xffffffff);
-
+    
     ```
 1. **Build** the project
     >If there are any errors, check and fix your code. Your C code will eventually read the value of the switches and output it to the led_ip.
@@ -168,18 +168,18 @@ Notice the files in this directory and open **led_ip.c**. This file only include
     #include "xgpio.h"
     #include "led_ip.h"
     //====================================================
-
+    
     int main (void)
     {
-
+    
     XGpio dip, push;
     int i, psb_check, dip_check;
-
+    
     xil_printf("-- Start of the Program --\r\n");
-
+    
     XGpio_Initialize(&dip, XPAR_SWITCHES_DEVICE_ID); // Modify this
     XGpio_SetDataDirection(&dip, 1, 0xffffffff);
-
+    
     XGpio_Initialize(&push, XPAR_BUTTONS_DEVICE_ID); // Modify this
     XGpio_SetDataDirection(&push, 1, 0xffffffff);
 
@@ -190,10 +190,10 @@ Notice the files in this directory and open **led_ip.c**. This file only include
         xil_printf("Push Buttons Status %x\r\n", psb_check);
         dip_check = XGpio_DiscreteRead(&dip, 1);
         xil_printf("DIP Switch Status %x\r\n", dip_check);
-
+    
         // output dip switches value on LED_ip device
         LED_IP_mWriteReg(XPAR_LED_IP_S_AXI_BASEADDR, 0, dip_check);
-
+    
         for (i=0; i<9999999; i++);
     }
     }
